@@ -6,4 +6,17 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
   line-height: 200%;
   font-size: 30px;
   word-wrap: break-word;
+  margin-left: 20px;
+}
+
+.selected {
+  background-color: grey;
+}
+
+#start-button {
+  display: none;
+}
+
+#game-panel {
+  display: none;
 }

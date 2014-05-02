@@ -22,10 +22,8 @@
     </head>
     <body>
         <div class="container">
-          <div class="row">
-            <h3>Select vocabulary to review</h3>
-
-            <div class="col-md-1 col-lg-1 col-sm-1">
+          <div class="row" id="choose-panel">
+            <div class="col-md-offset-3 col-md-1 col-lg-1 col-sm-1 review-column">
               <div class="toptobottom">
                 &#12354;
                 &#12356;
@@ -35,7 +33,7 @@
               </div>
             </div>
 
-            <div class="col-md-1 col-lg-1">
+            <div class="col-md-1 col-lg-1 review-column">
               <div class="toptobottom">
                 &#12363;
                 &#12365;
@@ -44,6 +42,16 @@
                 &#12371;
               </div>
             </div>
+          </div>
+
+          <button type="button" class="btn btn-default btn-lg" id="start-button">
+            <span class="glyphicon glyphicon-play"></span> Start
+          </button>
+
+          <div class="row" id="game-panel">
+            <div class="col-md-offset-3 col-md-1 col-lg-1 col-sm-1">
+              <p id="hiragana-letter"></p>
+              <input id="hiragana-answer" />
           </div>
         </div>
 
@@ -70,6 +78,7 @@
 
         <!-- bower:js -->
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/underscore/underscore.js"></script>
         <!-- endbower -->
-</body>
+  </body>
 </html>
