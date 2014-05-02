@@ -1,11 +1,9 @@
 $iconSpritePath: "../images/glyphicons-halflings.png";
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
-@import 'sass-bootstrap/lib/bootstrap';
-
-  .toptobottom {
-    width: 0;
-    line-height: 200%;
-    font-size: 30px;
-    word-wrap: break-word;
-  }
+.toptobottom {
+  width: 0;
+  line-height: 200%;
+  font-size: 30px;
+  word-wrap: break-word;
+}

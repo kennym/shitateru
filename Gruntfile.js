@@ -22,8 +22,18 @@ module.exports = function (grunt) {
         dist: 'dist'
     };
 
+    grunt.loadNpmTasks('grunt-bower-install');
+
     grunt.initConfig({
         yeoman: yeomanConfig,
+        bowerInstall: {
+          target: {
+            src: [
+                'app/index.html'
+            ],
+            ignorePath: '<%= yeoman.app %>/'
+          }
+        },
         watch: {
             coffee: {
                 files: ['<%= yeoman.app %>/scripts/{,*/}*.coffee'],
